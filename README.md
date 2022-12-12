@@ -1,4 +1,4 @@
-# Flex Money Assignment
+# Flex Money Assignment I have hosted in <a href='https://app.cyclic.sh/'>cyclic</a>
 
 - Using React-router I have this endpoints for the users /sign-up, /sign-in
 # /sign-up 
