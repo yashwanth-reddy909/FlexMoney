@@ -13,6 +13,21 @@
    -Expiration Date if he got subscribed<br>
    -If he doesn't have subscription It will show to renewal<br>
    
-
+# backend-api
+ # /backendapi/users GET
+   -we can get all users data<br>
    
+ # backendapi/users POST
+   -User sign up endpoint<br>
+   -req params we get the data and we post it in backend server<br>
+   -once again we check the constraits<br>
+   
+ # /backendapi/users/:EmailId GET
+   -By req.params we find the row by using the EmailId <br>
+   -As the EmailId is the primary key for the Object<br>
+   
+  # /backendapi/users/:EmailId DELETE
+   -By req.params we find the row by using the EmailId <br>
+   -And we can remove the document if needed<br>
+   -But in the front-end I didn't added this feature<br>
   
