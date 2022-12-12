@@ -45,5 +45,50 @@
    -From req body we will get Shift number what type of shift he needed<br>
    - { Payment: boolen, user: User_details, Subscrition: Subscription details}<br>
 
+# ER Diagram
+ Users:<br>
+     FullName: {
+        type: String,
+        required: true
+    },<br>
+    EmailId: {
+        type: String,
+        required: true,
+        unique: true
+    },<br>
+    Age: {
+        type: Number,
+        min: 18,
+        max: 65,
+        required: true
+    },<br>
+    AmountPaid: {
+        type: Number,
+        default: 0
+    }<br>
+   
+Subscription:<br>     
+     User: {
+        type: mongoose.Schema.Types.ObjectId,(Foreign Key)
+        ref: 'Users'
+    },<br>
+    Money: {
+        type: Number,
+        default: 500
+    },<br>
+    Shift: {
+        type: Number,
+        min: 1, 
+        max: 4,
+        required: True
+    },<br>
+    PaymentTime: {
+        type: String, 
+        required: true
+    },<br>
+    ExpirationDate: {
+        type: String,
+        required: true
+    }<br>
 
 
