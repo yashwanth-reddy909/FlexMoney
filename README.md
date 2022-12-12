@@ -48,6 +48,7 @@
 # ER Diagram
 
 # Users:<br>
+
      FullName: {
         type: String,
         required: true
@@ -68,7 +69,7 @@
         default: 0
     }<br>
    
-# Subscription:<br>     
+# Subscription: <br>     
      User: {
         type: mongoose.Schema.Types.ObjectId,(Foreign Key)
         ref: 'Users'
