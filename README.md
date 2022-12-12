@@ -30,4 +30,18 @@
    -By req.params we find the row by using the EmailId <br>
    -And we can remove the document if needed<br>
    -But in the front-end I didn't added this feature<br>
+   
+  # /backendapi/users/:EmailId/recharge GET
+   -By req.params we find the row by using the EmailId <br>
+   -We check the new Date() vs Expiration Date that the latest subscription he has there we declare his active status<br>
+   -Here we can get the Expiration Date of the Subscription and PaymentTime<br>
+   -User details too<br>
+   - { Expire: bool, user: User_details, Subscrition: Subscription details}<br>
   
+  # /backendapi/users/:EmailId/recharge POST
+   -By req.params we find the row by using the EmailId <br>
+   -We check the new Date() vs Expiration Date only if the Expiration Date expires only then we process this api<br>
+   -From req body we will get Shift number what type of shift he needed<br>
+   - { Payment: boolen, user: User_details, Subscrition: Subscription details}<br>
+
+
