@@ -1,8 +1,8 @@
 const express= require('express');
 const bodyParser=require('body-parser');
 const mongoose=require('mongoose');
-const YogaUsers=require('../models/YogaUsers');
-const Subscriptions=require('../models/Subscriptions');
+const YogaUsers=require('../Models/YogaUsers');
+const Subscriptions=require('../Models/Subscriptions');
 var app=express();
 const YogaUsersRouter= express.Router();
 YogaUsersRouter.use(bodyParser.json());
