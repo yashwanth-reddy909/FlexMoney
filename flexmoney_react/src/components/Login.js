@@ -101,7 +101,7 @@ function Login(){
             Total Amount paid so far {dt.User.AmountPaid}<br/>
             Shift {GetShift(dt.Subscription.Shift)}<br/>
             Thanks for being an active subscriber<br/>
-            {dt.Subscription.ExpirationDate}<br/>
+            Expire Date: {dt.Subscription.ExpirationDate}<br/>
             <button className="btn btn-primary mb" onClick={refreshPage}>
                 Back to Home
           </button>
