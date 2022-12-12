@@ -1,5 +1,6 @@
 # Flex Money Assignment
 
+- Using React-router I have this endpoints for the users /sign-up, /sign-in
 # /sign-up 
  Users can able to register with Name, EmailId, Age, Shift that he desired to join<br>
   EmailId - Need to be unique<br>
@@ -43,5 +44,6 @@
    -We check the new Date() vs Expiration Date only if the Expiration Date expires only then we process this api<br>
    -From req body we will get Shift number what type of shift he needed<br>
    - { Payment: boolen, user: User_details, Subscrition: Subscription details}<br>
+
 
 
